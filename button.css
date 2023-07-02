@@ -1,0 +1,33 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:sans-serif;
+}
+.banner {
+    width: 800px;
+    height:500px;
+    margin:50px;
+    margin: auto;
+    padding:50px;
+    margin-top: 50px;
+    border-radius: 20px;
+    background-color:rgb(87, 87, 196);
+}
+.red {
+
+    width: 165px;
+    height:240px;
+    margin: 60px auto;
+    padding:20px;
+    border-radius: 40px;
+    background: rgb(0, 0, 0);
+    transform: rotate(-20deg);
+}
+.green {
+    margin: -4px auto;
+    width:12px;
+    border-radius: 43%;
+    height:40px;
+    background:rgb(255, 255, 255)
+}

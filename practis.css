@@ -1,0 +1,143 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+/* .card {
+  width: 300px;
+  height: 300px;
+  margin: 30px auto;
+
+  position: relative;
+  overflow: hidden;
+}
+.card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 50%;
+  height: 100%;
+  background: #00f6;
+  transition: 0.5s;
+}
+.card:hover::before {
+  left: 0;
+}
+.card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.card::after{
+content: "";
+position: absolute;
+top:0;
+right: -100%;
+width: 50%;
+height: 100%;
+background: #00f6;
+transition: 0.5s;
+}
+.card:hover::after {
+    right:0;
+  } */
+
+.main {
+  width: 100%;
+  height: 100vh;
+  background: #67f373;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.card {
+  width: 280px;
+  height: 400px;
+  background: #fff;
+  border-radius: 6px;
+  transition: .5s;
+  position: relative;
+}
+.card:hover {
+  width: 600px;
+}
+.card_image {
+  width: 240px;
+  height: 320px;
+  background: radial-gradient(#bdfac2, #05de16);
+  margin: 40px 20px;
+  border-radius: 6px;
+  box-shadow: 0 0 20px #0006;
+  transition:.5s ;
+}
+.card_image img {
+  width: 100%;
+  transition: .5s;
+}
+.card:hover .card_image{
+  transform: translateX(-50px);
+}
+.card:hover .card_image > img{
+  transform: translateX(-50px);
+}
+.mini_photos {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 20px;
+  width: 0;
+  overflow: hidden;
+  transition: .5s linear.5s;
+}
+.card:hover .mini_photos {
+  width: 100%;
+}
+.mini_photos img {
+  width: 50px;
+}
+.mini_photos img:nth-child(2) {
+  filter: hue-rotate(120deg);
+}
+.mini_photos img:nth-child(3) {
+  filter: hue-rotate(200deg);
+}
+.mini_photos img:nth-child(4) {
+  filter: hue-rotate(280deg);
+}
+.card_text {
+  position: absolute;
+  top: 40px;
+  right: 30px;
+  width: 300px;
+  height: 0;
+  overflow: hidden;
+}
+.card:hover .card_text {
+  transition: 1s linear .5s;
+  height: 320px;
+  border-bottom: 2px solid red;
+}
+
+.card_item h1{
+  color: crimson;
+  margin: 16px 0;
+}
+.card_photos img{
+  width: 50px;
+  border:1 px solid #000;
+}
+.card_text ul {
+  padding-left: 16px;
+  font-size: 14px;
+  color:#999;
+  line-height: 1.6;
+}
+.btn {
+  padding: 6px 20px;
+  border-radius:6px;
+  border:none;
+  background: crimson;
+  color: #fff;
+  margin-top: 12px;
+}
